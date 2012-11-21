@@ -1,7 +1,7 @@
 <%= div_for @post do %>
 <h2><%= link_to_unless_current h(@post.title) %></h2>
 <h3> Name of author </h3>
-<%= simple_format h(@post.author_name) %>
+
 <h3> Body </h3>
 <%= simple_format h(@post.body) %>
 <% end %>
